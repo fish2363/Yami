@@ -2,17 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomStageSO : MonoBehaviour
+[CreateAssetMenu(fileName = "NewSO",menuName = "SO/GameSquencing")]
+public class RandomStageSO : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject sequencing;
+    public float Time;
+    public int textNum;
 }
